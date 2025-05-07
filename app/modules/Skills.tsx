@@ -1,18 +1,29 @@
 import React from 'react'
-import { FaGolang, FaReact } from 'react-icons/fa6'
+import { FaGithub, FaGolang, FaReact } from 'react-icons/fa6'
 import {RiNextjsFill } from 'react-icons/ri'
-import { SiAdobexd, SiJavascript, SiTypescript } from 'react-icons/si'
+import { SiAdobeaftereffects, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript } from 'react-icons/si'
 
 
 const Skills = () => {
   return (
-    <div className="flex flex-row text-[60px] gap-6 justify-center">
-      <SiAdobexd/>
-      <SiJavascript/>
-      <SiTypescript/>
-      <FaReact/>
-      <RiNextjsFill/>
-      <FaGolang/>
+    <div className=" bg-red-300 rounded-3xl text-center">
+      <h1>Skill Stack</h1>
+      <h3>Dev</h3>
+        <div className="p-2 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[60px]">
+          <SiAdobexd/>
+          <SiJavascript/>
+          <SiTypescript/>
+          <FaReact/>
+          <RiNextjsFill/>
+          <FaGolang/>
+          <FaGithub/>
+        </div>
+      <h3>Creative</h3>
+        <div className="p-2 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[60px]">
+          <SiAdobephotoshop/>
+          <SiAdobeaftereffects/>
+          <SiBlender/>
+        </div>
     </div>
   )
 }
