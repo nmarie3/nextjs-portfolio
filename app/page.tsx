@@ -4,6 +4,7 @@ import NaviMobile from "./modules/NaviMobile";
 import Projects from "./modules/Projects";
 import HistoryDesktop from "./modules/HistoryDesktop";
 import HistoryMobile from "./modules/HistoryMobile";
+import ThreeScene from "./components/ThreeScene";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <HistoryMobile/>
       {/*<HistoryDesktop/>*/}
       <Projects/>
+      <ThreeScene/>
     </div>
   );
 }
