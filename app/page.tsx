@@ -5,6 +5,7 @@ import Projects from "./modules/Projects";
 //import HistoryDesktop from "./modules/HistoryDesktop";
 import HistoryMobile from "./modules/HistoryMobile";
 import Skills from "./modules/Skills";
+import { ModalProvider } from "./components/ModalContext";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
         <Hero />
       <HistoryMobile/>
       <Skills/>
-      <Projects/>
+      <ModalProvider>
+        <Projects/>
+      </ModalProvider>
     </div>
   );
 }

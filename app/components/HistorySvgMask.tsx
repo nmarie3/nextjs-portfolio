@@ -1,5 +1,6 @@
 'use client'
-import { motion} from "framer-motion"
+import { motion, useInView, useAnimation} from "framer-motion";
+import React, {useRef, useEffect} from 'react';
 
 
 type Props = {
@@ -14,14 +15,14 @@ const HistorySvgMask = ({ className }: Props) => (
             animate={{ filter: "blur(5px)", pathLength: 0, pathOffset: 1}}
             transition={{
                 duration:1.7,
-                delay: 0.1,
+                delay: 1,
                 ease: "easeInOut",
             }}
             strokeDasharray="0 1"
             fill="none"
             style={{
-                fill: "none",
-                stroke: "#0A0A0A",
+                fill: "",
+                stroke: "#FFA1A3",
                 strokeMiterlimit: 0,
                 strokeWidth: "100px",
             }}

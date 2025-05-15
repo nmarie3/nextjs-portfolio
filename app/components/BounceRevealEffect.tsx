@@ -7,11 +7,14 @@ interface Props {
     delay?:number;
     stiffness?: number;
     damping?: number;
+    x?: number;
+    y?: number;
+    className?: string;
 }
 
-export const RevealEffect = ({children, delay=0, stiffness = 300, damping = 50}: Props) => {
+export const BounceEffect = ({children, delay=0, stiffness = 300, damping = 50, x=0, y=75, className}: Props) => {
     const ref = useRef(null);
-        const isInView = useInView(ref, {once: true});
+        const isInView = useInView(ref, {once: false});
     
         const mainControls = useAnimation();
     
@@ -26,8 +29,8 @@ export const RevealEffect = ({children, delay=0, stiffness = 300, damping = 50}:
     <div ref={ref} className="relative overflow-hidden w-fit">
         <motion.div
            variants={{
-                hidden:{opacity:0, y:75},
-                visible:{opacity:1, y:0},
+                hidden:{opacity:0, x, y},
+                visible:{opacity:1, x:0, y:0},
            }} 
            initial="hidden"
            animate={mainControls}
@@ -35,7 +38,7 @@ export const RevealEffect = ({children, delay=0, stiffness = 300, damping = 50}:
            type: "spring",
            stiffness,
            damping,}}
-           className="relative"
+           className={`relative ${className}`}
         >
                 {children}
         </motion.div>

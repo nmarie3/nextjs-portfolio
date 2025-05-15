@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -19,12 +18,14 @@
     --foreground: #ededed;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
 
 body {
-  background: var(--background);
+  background: black;
   color: var(--foreground);
-  /* font-family: Arial, Helvetica, sans-serif; */
-  font-family: "Sawarabi Gothic", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
 }

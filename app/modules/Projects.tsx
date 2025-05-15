@@ -1,12 +1,8 @@
 'use client'
-
 import React, { useState } from 'react';
-import {DevProjectsData} from './Projects/DevProjectsData';
-import {TranslationProjectsData} from './Projects/TranslationProjectsData';
-import {CreativeProjectsData} from './Projects/CreativeProjectsData';
-// import Image from 'next/image'
-// import { SiAdobeaftereffects, SiAdobephotoshop, SiBlender } from 'react-icons/si'
-import ProjectCardComponent from './ProjectCardComponent';
+import { getAllDev } from '../db/DevProjectsData';
+import DevList from '../components/DevList';
+
 
 export type ProjectCard = {
     id: number;
@@ -20,31 +16,31 @@ export type ProjectCard = {
 
 const Projects = () => {
       const [activeTab, setActiveTab] = useState<number>(0);
-      const [modal, setModal] = useState<ProjectCard | null>(null);
+      //const [modal, setModal] = useState<ProjectCard | null>(null);
+      const devProjects = getAllDev();
 
-      const handleClick= (card: ProjectCard) => setModal(card);
-      const closeModal = () => setModal(null);
+      // const handleClick= (card: ProjectCard) => setModal(card);
+      // const closeModal = () => setModal(null);
 
 
     const tabContents = [
         {
             title: "SOFTWARE DEVELOPMENT",
             content:(
-                  <div>
-                        {DevProjectsData.map((project) => (
-                              <ProjectCardComponent key={project.id} project={project} onClick={handleClick} />
-                        ))}
-                  </div>
+                  <DevList devProjects={devProjects}/>
             ),
         },
         {
             title: "TRANSLATION",
             content:(
                   <div>
-                        {TranslationProjectsData.map((project) => (
-                              <ProjectCardComponent key={project.id} project={project} onClick={handleClick} />
-                        ))}
+                  <DevList devProjects={devProjects}/>
                   </div>
+                  // <div>
+                  //       {TranslationProjectsData.map((project) => (
+                  //             <ProjectModal key={project.id} project={project} onClick={handleClick} />
+                  //       ))}
+                  // </div>
             ),
 
         },
@@ -52,10 +48,13 @@ const Projects = () => {
             title: "CREATIVE",
             content:(
                   <div>
-                        {CreativeProjectsData.map((project) => (
-                              <ProjectCardComponent key={project.id} project={project} onClick={handleClick} />
-                        ))}
+                  <DevList devProjects={devProjects}/>
                   </div>
+                  // <div>
+                  //       {CreativeProjectsData.map((project) => (
+                  //             <ProjectModal key={project.id} project={project} onClick={handleClick} />
+                  //       ))}
+                  // </div>
             ),
 
         }
@@ -70,7 +69,7 @@ const Projects = () => {
     return (
       <div>
             {/* render tabs */}
-            <div className="flex justify-between gap-3 orange">
+            <div className="cursor-pointer flex justify-between gap-3 orange">
                   {tabContents.map((tab, index) => (
                         <div
                               key={index}
@@ -80,45 +79,15 @@ const Projects = () => {
                         </div>
                   ))}
             </div>
-                  {/* render all contents
-            <div className="flex flex-row mt-6">
-                  {tabContents[activeTab].content}
-            </div> */}
 
-                  {/* render only image */}
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
-                  {(activeTab === 0 ? DevProjectsData
-                  : activeTab === 1 ? TranslationProjectsData
-                  : CreativeProjectsData
-                  ).map((project) => (
-                        <div key={project.id} className="relative group overflow-hidden rounded shadow">
-                              <img
-                                    src={project.src}
-                                    alt={project.title}
-                                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                              />
-                               <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <span className="text-white text-sm font-semibold text-center px-2">{project.title}</span>
-                              </div>
-                        </div>
-                  ))}      
-            </div>      
-
-                  {/* render modal */}
-            {modal && (
-                  <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50" onClick={closeModal}>
-                        <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full" onClick={(e) => e.stopPropagation()}>
-                              <h2>{modal.title}</h2>
-                              <h3>{modal.summary}</h3>
-                              <p>Tools: {modal.tools.join(", ")}</p>
-                              <a href={modal.link} target="_blank" rel="noopener noreferrer">
-                                    View Project
-                              </a>
-                        </div>
-                  </div>
-            )}
+            {/* render tab contents */}
+            <div className="flex justify-between gap-3 orange">
+                  {activeTab === 0 && <DevList devProjects={devProjects} />}
+                  {activeTab === 1 && <DevList devProjects={devProjects} />}
+                  {activeTab === 3 && <DevList devProjects={devProjects} />}
+            </div>          
       </div>
-    )
+ )
 }
 
 

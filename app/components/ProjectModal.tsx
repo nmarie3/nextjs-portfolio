@@ -1,13 +1,13 @@
 'use client'
 import React from "react";
-import { ProjectCard } from './Projects';
+import { ProjectCard } from "../modules/Projects";
 
 type Props = {
   project: ProjectCard;
   onClick: (card: ProjectCard) => void;
 };
 
-const ProjectCardComponent: React.FC<Props> = ({ project, onClick }) => {
+const ProjectModal: React.FC<Props> = ({ project, onClick }) => {
   return (
     <div
       className="p-4 border rounded shadow cursor-pointer"
@@ -23,4 +23,4 @@ const ProjectCardComponent: React.FC<Props> = ({ project, onClick }) => {
   );
 };
 
-export default ProjectCardComponent;
+export default ProjectModal;

@@ -1,6 +1,5 @@
 'use client';
 import React from 'react'
-import Image from 'next/image';
 
 export type ProjectCard = {
     id: number;
@@ -11,39 +10,47 @@ export type ProjectCard = {
     link: string;
 }
 
-export const DevProjectsData: ProjectCard[] = [
+    const creativeProjectsData: ProjectCard[] = [
     {
         id: 1,
-        title:"aegisub",
-        src: "/images/aegisub.png",
+        title:"",
+        src: "",
         summary: "",
         tools: [],
         link: "",
     },
     {
         id: 2,
-        title:"aegisub",
-        src: "/images/aegisub.png",
+        title:"",
+        src: "",
         summary: "",
         tools: [],
         link: "",
     },
     {
         id: 3,
-        title:"aegisub",
-        src: "/images/aegisub.png",
+        title:"",
+        src: "",
         summary: "",
         tools: [],
         link: "",
     },
     {
         id: 4,
-        title:"aegisub",
-        src: "/images/aegisub.png",
+        title:"",
+        src: "",
         summary: "",
         tools: [],
         link: "",
     },
 ]
 
-export default DevProjectsData
+const getAllCreative = () => {
+    return creativeProjectsData;
+}
+
+const getOneCreative = (id: number) => {
+    return creativeProjectsData.find(creativeProject => creativeProject.id === id);
+}
+
+export {getAllCreative, getOneCreative}

@@ -14,8 +14,8 @@ const HistorySvg = ({ className }: Props) => (
         }
 
         .cls-2 {
-          fill: #fff;
-          stroke: fff;
+          fill: #900C3F;
+          stroke: #900C3F;
           stroke-miterlimit: 10;
         }
 
