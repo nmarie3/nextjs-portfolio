@@ -1,9 +1,10 @@
-'use client';
+//DO NOT USE "USE CLIENT" ON THIS FILE OR IT WILL EFF THINGS UP!!!!　GIVES A CLIENT/SERVER SIDE ERROR
+
 import React from 'react'
 import Image from 'next/image';
 
 export type ProjectCard = {
-    id: number;
+    id: string;
     src: string;
     title:string;
     summary: string;
@@ -13,7 +14,15 @@ export type ProjectCard = {
 
     const devProjectsData: ProjectCard[] = [
     {
-        id: 1,
+        id: "1",
+        title:"aegisub",
+        src: "/images/aegisub.png",
+        summary: "wvwebvaebeafvavebwerbqwerbwe",
+        tools: [],
+        link: "",
+    },
+    {
+        id: "2",
         title:"aegisub",
         src: "/images/aegisub.png",
         summary: "",
@@ -21,7 +30,7 @@ export type ProjectCard = {
         link: "",
     },
     {
-        id: 2,
+        id: "3",
         title:"aegisub",
         src: "/images/aegisub.png",
         summary: "",
@@ -29,7 +38,7 @@ export type ProjectCard = {
         link: "",
     },
     {
-        id: 3,
+        id: "4",
         title:"aegisub",
         src: "/images/aegisub.png",
         summary: "",
@@ -37,7 +46,7 @@ export type ProjectCard = {
         link: "",
     },
     {
-        id: 4,
+        id: "5",
         title:"aegisub",
         src: "/images/aegisub.png",
         summary: "",
@@ -45,7 +54,7 @@ export type ProjectCard = {
         link: "",
     },
     {
-        id: 5,
+        id: "6",
         title:"aegisub",
         src: "/images/aegisub.png",
         summary: "",
@@ -53,15 +62,7 @@ export type ProjectCard = {
         link: "",
     },
     {
-        id: 6,
-        title:"aegisub",
-        src: "/images/aegisub.png",
-        summary: "",
-        tools: [],
-        link: "",
-    },
-    {
-        id: 7,
+        id: "7",
         title:"aegisub",
         src: "/images/aegisub.png",
         summary: "",
@@ -75,7 +76,7 @@ const getAllDev = () => {
     return devProjectsData;
 }
 
-const getOneDev = (id: number) => {
+const getOneDev = (id: string) => {
     return devProjectsData.find(devProject => devProject.id === id);
 }
 

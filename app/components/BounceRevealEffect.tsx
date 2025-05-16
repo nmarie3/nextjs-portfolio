@@ -21,6 +21,8 @@ export const BounceEffect = ({children, delay=0, stiffness = 300, damping = 50, 
         useEffect(() => {
             if (isInView) {
                 mainControls.start("visible")
+            } else {
+                mainControls.start("hidden");
             }
         }, [isInView]);
 

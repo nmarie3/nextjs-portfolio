@@ -3,11 +3,14 @@ import { FaGithub, FaGolang, FaReact } from 'react-icons/fa6'
 import {RiNextjsFill } from 'react-icons/ri'
 import { SiAdobeaftereffects, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript } from 'react-icons/si'
 import { BounceEffect } from '../components/BounceRevealEffect'
+import { ScrollAnimate } from '../components/ScrollAnimate'
 
 
 const Skills = () => {
   return (
-    <div className="h-200 w-full bg-black text-center mt-5 mb-5 p-10">
+    <section>
+    <ScrollAnimate>
+      <div className=" bg-black text-white text-center mt-10 mb-10 p-10">
       <h1>Skill Stack</h1>
       <div className="grid grid-cols-2 gap-3 text-center">
             <div>
@@ -36,6 +39,8 @@ const Skills = () => {
             </div>
       </div>
     </div>
+    </ScrollAnimate>
+    </section>
   )
 }
 

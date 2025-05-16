@@ -20,7 +20,9 @@ export const SlideEffect = ({children, delay=0, duration=0.5, x=0, y=75, classNa
         useEffect(() => {
             if (isInView) {
                 mainControls.start("visible");
-            }
+            } else {
+                mainControls.start("hidden");
+    }
         }, [isInView]);
 
 

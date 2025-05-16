@@ -1,8 +1,8 @@
 import Link from "next/link";
-import ProjectCard from "./ProjectCard";
+import DevCard from "./DevProject";
 
 type DevProject = {
-  id: number;
+  id: string;
   src: string;
   title:string;
   summary: string;
@@ -16,7 +16,7 @@ const DevList = ({ devProjects }: { devProjects: DevProject[] }) => {
         <div className="flex flex-wrap justify-start">
             {devProjects.map((devProject) => (
                 <Link key={devProject.id} href={`/devProjects/${devProject.id}`}>
-                    <ProjectCard devProject={devProject} />
+                    <DevCard devProject={devProject} />
                 </Link>
             ))}
         </div>

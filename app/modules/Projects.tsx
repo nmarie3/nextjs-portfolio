@@ -1,7 +1,10 @@
 'use client'
 import React, { useState } from 'react';
 import { getAllDev } from '../db/DevProjectsData';
-import DevList from '../components/DevList';
+import DevList from '../components/DevModal/DevList';
+import { ScrollAnimate } from '../components/ScrollAnimate';
+import { BounceEffect } from '../components/BounceRevealEffect';
+import { SlideEffect } from '../components/SlideRevealEffect';
 
 
 export type ProjectCard = {
@@ -16,11 +19,7 @@ export type ProjectCard = {
 
 const Projects = () => {
       const [activeTab, setActiveTab] = useState<number>(0);
-      //const [modal, setModal] = useState<ProjectCard | null>(null);
       const devProjects = getAllDev();
-
-      // const handleClick= (card: ProjectCard) => setModal(card);
-      // const closeModal = () => setModal(null);
 
 
     const tabContents = [
@@ -36,25 +35,15 @@ const Projects = () => {
                   <div>
                   <DevList devProjects={devProjects}/>
                   </div>
-                  // <div>
-                  //       {TranslationProjectsData.map((project) => (
-                  //             <ProjectModal key={project.id} project={project} onClick={handleClick} />
-                  //       ))}
-                  // </div>
             ),
 
         },
         {
-            title: "CREATIVE",
+            title: "ARTWORK",
             content:(
                   <div>
                   <DevList devProjects={devProjects}/>
                   </div>
-                  // <div>
-                  //       {CreativeProjectsData.map((project) => (
-                  //             <ProjectModal key={project.id} project={project} onClick={handleClick} />
-                  //       ))}
-                  // </div>
             ),
 
         }
@@ -67,13 +56,15 @@ const Projects = () => {
     };
 
     return (
-      <div>
+      <section>
+      <ScrollAnimate>
+            <div>
             {/* render tabs */}
-            <div className="cursor-pointer flex justify-between gap-3 orange">
+            <div className="flex flex-row gap-3 justify-between ">
                   {tabContents.map((tab, index) => (
                         <div
                               key={index}
-                              className={`tab ${activeTab === index ? 'active' : ""}`}
+                              className={`w-full flex justify-center rounded-t-2xl pt-6 pb-6 cursor-pointer ${activeTab === index ? 'bg-green-500 text-white' : 'bg-red-200 hover:bg-gray-300' }`}
                               onClick={() => handleTabClick(index)}>
                               {tab.title}
                         </div>
@@ -81,12 +72,14 @@ const Projects = () => {
             </div>
 
             {/* render tab contents */}
-            <div className="flex justify-between gap-3 orange">
+            <div className="flex justify-between gap-3 bg-green-500">
                   {activeTab === 0 && <DevList devProjects={devProjects} />}
                   {activeTab === 1 && <DevList devProjects={devProjects} />}
                   {activeTab === 3 && <DevList devProjects={devProjects} />}
             </div>          
       </div>
+      </ScrollAnimate>
+      </section>
  )
 }
 
