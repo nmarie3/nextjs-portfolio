@@ -1,7 +1,5 @@
 //DO NOT USE "USE CLIENT" ON THIS FILE OR IT WILL EFF THINGS UP!!!!　GIVES A CLIENT/SERVER SIDE ERROR
 
-import React from 'react'
-import Image from 'next/image';
 
 export type ProjectCard = {
     id: string;
@@ -16,7 +14,7 @@ export type ProjectCard = {
     {
         id: "1",
         title:"aegisub",
-        src: "/images/aegisub.png",
+        src: "",
         summary: "wvwebvaebeafvavebwerbqwerbwe",
         tools: [],
         link: "",

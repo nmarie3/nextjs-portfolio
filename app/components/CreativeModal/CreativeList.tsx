@@ -1,0 +1,33 @@
+import Link from "next/link";
+import CreativeProjectDisplay from "./CreativeProject";
+import { BounceEffect } from "../BounceRevealEffect";
+
+type CreativeProject = {
+  id: string;
+  src: string;
+  title:string;
+  summary: string;
+  tools: string[];
+  link: string;
+};
+
+const CreativeList = ({ creativeProjects }: { creativeProjects: CreativeProject[] }) => {
+
+    return (
+        <div className="flex flex-wrap justify-between">
+            {creativeProjects.map((creativeProject, index) => (
+                <Link key={creativeProject.id} href={`/PageCreativeProjects/${creativeProject.id}`}>
+                    <div className="m-1 w-[200px] h-[200px] overflow-hidden">
+                    <BounceEffect delay={index * 0.2} stiffness={100} damping={10}>
+                        <div className="w-full h-full object-cover">
+                            <CreativeProjectDisplay creativeProject={creativeProject}/>
+                        </div>
+                        </BounceEffect>
+                    </div>
+                </Link>
+            ))}
+        </div>
+    );
+};
+
+export default CreativeList;

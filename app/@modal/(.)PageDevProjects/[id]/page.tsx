@@ -28,16 +28,3 @@ const DevModal = ({ params }: Props) => {
 };
 
 export default DevModal;
-
-
-// interface Props {
-//   params: Promise<{
-//     id: string;
-//   }>;
-// }
-
-
-// const DevModal = (props: Props) => {
-//     const {id} = use(props.params);
-
-//     const devProject = getOneDev(id);

@@ -9,12 +9,6 @@ interface Props {
 const Modal = ({children}:Props) => {
     const router = useRouter();
 
-    // useEffect(() => {
-    //     if (!modalRef.current?.open) {
-    //         modalRef.current?.showModal();
-    //     }
-    // },[]);
-
     const handleOpenChange = ()=> {
         router.back();
     }

@@ -1,5 +1,6 @@
 import Link from "next/link";
-import DevCard from "./DevProject";
+import DevProjectDisplay from "./DevProject";
+import { BounceEffect } from "../BounceRevealEffect";
 
 type DevProject = {
   id: string;
@@ -14,9 +15,11 @@ const DevList = ({ devProjects }: { devProjects: DevProject[] }) => {
 
     return (
         <div className="flex flex-wrap justify-start">
-            {devProjects.map((devProject) => (
-                <Link key={devProject.id} href={`/devProjects/${devProject.id}`}>
-                    <DevCard devProject={devProject} />
+            {devProjects.map((devProject, index) => (
+                <Link key={devProject.id} href={`/PageDevProjects/${devProject.id}`}>
+                    <div className="">
+                    <BounceEffect delay={index * 0.2} stiffness={100} damping={10}><DevProjectDisplay devProject={devProject} /></BounceEffect>
+                    </div>
                 </Link>
             ))}
         </div>
