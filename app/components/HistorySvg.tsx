@@ -5,17 +5,38 @@ type Props = {
 
 const HistorySvg = ({ className }: Props) => (
  <div>
-    <svg id="Layer_7" xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 585.8 218.39" className={className} preserveAspectRatio="xMidYMid meet">
+    <svg id="Layer_7" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 585.8 218.39" className={className} preserveAspectRatio="xMidYMid meet">
   <defs>
+    {/*rainbow gradient*/}
+    <linearGradient id="rainbowStroke" x1="0%" y1="0%" x2="100%" y2="0%">
+  <stop offset="0%" stopColor="#ff69b4">
+    <animate
+      attributeName="stop-color"
+      values="#ff69b4;#ff1493;#ffc0cb;#87cefa;#add8e6;#00bfff;#ffc0cb;#ff69b4"
+      dur="60s"
+      repeatCount="indefinite"
+    />
+  </stop>
+  <stop offset="100%" stopColor="#ff69b4">
+    <animate
+      attributeName="stop-color"
+      values="#ff69b4;#ff1493;#ffc0cb;#87cefa;#add8e6;#00bfff;#ffc0cb;#ff69b4"
+      dur="120s"
+      repeatCount="indefinite"
+    />
+  </stop>
+</linearGradient>
+
     {/*glow*/}
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+      <feGaussianBlur stdDeviation="1" result="coloredBlur" />
       <feMerge>
         <feMergeNode in="coloredBlur" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
     {/*end*/}
+
     <style>
       {`
         .cls-1 {
@@ -23,8 +44,9 @@ const HistorySvg = ({ className }: Props) => (
         }
 
         .cls-2 {
-          fill: #f5f6ef;
-          stroke: #f7f9df;
+          fill: #efdfdf;
+          stroke: url(#rainbowStroke);
+          stroke-width: 1;
           stroke-miterlimit: 10;
         }
 

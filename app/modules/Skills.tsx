@@ -1,40 +1,77 @@
 import React from 'react'
+import { Bungee_Inline, Patrick_Hand, Tilt_Warp, Kosugi} from 'next/font/google';
 import { FaGithub, FaGolang, FaReact } from 'react-icons/fa6'
 import {RiNextjsFill } from 'react-icons/ri'
 import { SiAdobeaftereffects, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript } from 'react-icons/si'
 import { BounceEffect } from '../components/BounceRevealEffect'
 import { ScrollAnimate } from '../components/ScrollAnimate'
+import Image from 'next/image'
 
+const bungee = Bungee_Inline({
+  weight: ["400"]
+})
+
+const smooch = Patrick_Hand({
+  weight: ["400"]
+})
+
+const tiltwarp = Tilt_Warp({
+  weight: ["400"]
+})
+
+const mochiy = Kosugi({
+  weight: ["400"]
+})
 
 const Skills = () => {
   return (
-    <section>
+    <section className="">
     <ScrollAnimate>
-      <div className=" bg-black text-white text-center mt-10 mb-10 p-10">
-      <h1>Skill Stack</h1>
-      <div className="grid grid-cols-2 gap-3 text-center">
-            <div>
-                <span className="inline-block text-center">
+      <div className="pt-15 pb-10 text-white text-center bg-gradient-to-b from-zinc-950 via-gray-400 to-zinc-950 pl-3 pr-3">
+      <h1 className={`${tiltwarp.className} rainbow-text text-2xl text-transparent animate-gradient mb-3`}>Skill Stack</h1>
+      <div className="grid grid-cols-2 gap-2 text-center">
+            <div className=" bg-gray-300 rounded-lg pb-2 shadow-lg">
+                <span className={`${tiltwarp.className} text-zinc-700 text-lg inline-block text-center pt-2 underline`}>
                   <BounceEffect delay={0.3}>Dev</BounceEffect>
                 </span>
-                    <div className="p-2 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[60px]">
-                      <BounceEffect delay={0.5} stiffness={100} damping={10}><SiAdobexd/></BounceEffect>
-                      <BounceEffect delay={0.6} stiffness={100} damping={10}><SiJavascript/></BounceEffect>
-                      <BounceEffect delay={0.7} stiffness={100} damping={10}><SiTypescript/></BounceEffect>
-                      <BounceEffect delay={0.8} stiffness={100} damping={10}><FaReact/></BounceEffect>
-                      <BounceEffect delay={0.9} stiffness={100} damping={10}><RiNextjsFill/></BounceEffect>
-                      <BounceEffect delay={1} stiffness={100} damping={10}><FaGolang/></BounceEffect>
-                      <BounceEffect delay={1.1} stiffness={100} damping={10}><FaGithub/></BounceEffect>
+                    <div className="p-2 pt-0 flex flex-wrap justify-center gap-x-3 gap-y-2 text-[60px]">
+                      <BounceEffect delay={0.5} stiffness={100} damping={10}><SiAdobexd className="text-4xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={0.6} stiffness={100} damping={10}><SiJavascript className="text-4xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={0.7} stiffness={100} damping={10}><SiTypescript className="text-4xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={0.8} stiffness={100} damping={10}><FaReact className="text-4xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={0.9} stiffness={100} damping={10}><RiNextjsFill className="text-4xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={1} stiffness={100} damping={10}><FaGolang className="text-4xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={1.1} stiffness={100} damping={10}><FaGithub className="text-4xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={1.1} stiffness={100} damping={10}><FaGithub className="text-4xl text-zinc-700"/></BounceEffect>
                     </div>
             </div>
-            <div>
-                <span className="inline-block text-center">
+            <div className=" bg-gray-300 rounded-lg pb-2 shadow-lg">
+                <span className={`${tiltwarp.className} inline-block text-center text-lg pt-2 underline text-zinc-700`}>
                   <BounceEffect delay={0.3}>Creative</BounceEffect>
                 </span>
-                  <div className="p-2 flex flex-wrap justify-center gap-x-5 gap-y-2 text-[60px]">
-                    <BounceEffect delay={0.5} stiffness={100} damping={10}><SiAdobephotoshop/></BounceEffect>
-                    <BounceEffect delay={0.6} stiffness={100} damping={10}><SiAdobeaftereffects/></BounceEffect>
-                    <BounceEffect delay={0.7} stiffness={100} damping={10}><SiBlender/></BounceEffect>
+                  <div className="p-2 pt-0  flex flex-wrap justify-center gap-x-3 gap-y-2 text-[60px]">
+                    <BounceEffect delay={0.5} stiffness={100} damping={10}><SiAdobephotoshop className="text-4xl text-zinc-700"/></BounceEffect>
+
+                    <BounceEffect delay={0.6} stiffness={100} damping={10}><SiAdobeaftereffects className="text-4xl text-zinc-700"/></BounceEffect>
+
+                    <BounceEffect delay={0.7} stiffness={100} damping={10}><SiBlender className="text-4xl text-zinc-700"/></BounceEffect>
+
+                    <BounceEffect delay={0.7} stiffness={100} damping={10}>
+                      <Image
+                        src="images/aegisub.svg"
+                        alt="aegisub"
+                        height={40}
+                        width={40}
+                        className=""
+                      />
+                    </BounceEffect>
                   </div>
             </div>
       </div>

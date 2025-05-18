@@ -19,7 +19,7 @@ const HistorySvgMask = ({ className }: Props) => {
   return (
 
  <div ref={ref}>
-      <svg id="Layer_7" xmlns="http://www.w3.org/2000/svg" viewBox="-5 0 585.8 218.39" className={className} preserveAspectRatio="xMidYMid meet">
+      <svg id="Layer_7" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 585.8 218.39" className={className} preserveAspectRatio="xMidYMid meet">
         <motion.path
           key={keyIndex}
           initial={{
@@ -34,14 +34,14 @@ const HistorySvgMask = ({ className }: Props) => {
           }}
           transition={{
             duration: 1.7,
-            delay: 0,
+            delay: 0.3,
             ease: "easeInOut",
           }}
           strokeDasharray="0 1"
           fill="none"
           style={{
             fill: "",
-            stroke: "#000000",
+            stroke: "#09090b",
             strokeMiterlimit: 0,
             strokeWidth: "100px",
           }}

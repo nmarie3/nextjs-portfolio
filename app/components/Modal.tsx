@@ -18,8 +18,9 @@ const Modal = ({children}:Props) => {
             <DialogPortal> {/*stops modal bg from jumping to top page*/}
             <DialogOverlay />
             <DialogContent className="fixed flex items-center justify-center overflow-y-hidden">
-                <DialogTitle></DialogTitle>
+                <DialogTitle className="pt-3">
                 {children}
+                </DialogTitle>
             </DialogContent>
             </DialogPortal>
         </Dialog>
