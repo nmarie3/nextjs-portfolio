@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import {NextIntlClientProvider} from "next-intl";
-import {getMessages} from "next-intl/server"
+//import Navbar from "./modules/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,20 +26,20 @@ export default function RootLayout({
   modal: React.ReactNode;
 }>) {
 
-    // const messages= await getMessages()
-
   return (
-    // <NextIntlClientProvider messages={messages}>
     <html lang="en">
       <head>
       </head>
       <body 
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {modal}
-        {children}
+        
+        
+        {/* <main className="pt-16"> */}
+          {modal}
+          {children}
+        {/* </main> */}
       </body>
     </html>
-    // </NextIntlClientProvider>
   );
 }

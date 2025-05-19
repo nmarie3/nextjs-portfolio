@@ -13,7 +13,7 @@ const HistorySvg = ({ className }: Props) => (
     <animate
       attributeName="stop-color"
       values="#ff69b4;#ff1493;#ffc0cb;#87cefa;#add8e6;#00bfff;#ffc0cb;#ff69b4"
-      dur="60s"
+      dur="10s"
       repeatCount="indefinite"
     />
   </stop>
@@ -21,7 +21,7 @@ const HistorySvg = ({ className }: Props) => (
     <animate
       attributeName="stop-color"
       values="#ff69b4;#ff1493;#ffc0cb;#87cefa;#add8e6;#00bfff;#ffc0cb;#ff69b4"
-      dur="120s"
+      dur="80s"
       repeatCount="indefinite"
     />
   </stop>

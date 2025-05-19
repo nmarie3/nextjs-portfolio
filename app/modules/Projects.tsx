@@ -1,5 +1,5 @@
 'use client'
-import { Bungee_Inline, Patrick_Hand, Tilt_Warp, Kosugi} from 'next/font/google';
+import { Tilt_Warp, Kosugi, Mochiy_Pop_One} from 'next/font/google';
 import React, { useState } from 'react';
 import { getAllDev } from '../db/DevProjectsData';
 import DevList from '../components/DevModal/DevList';
@@ -12,19 +12,15 @@ import { BounceEffect } from '../components/BounceRevealEffect';
 import { SlideEffect } from '../components/SlideRevealEffect';
 
 
-const bungee = Bungee_Inline({
-  weight: ["400"]
-})
-
-const smooch = Patrick_Hand({
-  weight: ["400"]
-})
-
 const tiltwarp = Tilt_Warp({
   weight: ["400"]
 })
 
-const mochiy = Kosugi({
+const kosugi = Kosugi({
+  weight: ["400"]
+})
+
+const mochiy = Mochiy_Pop_One({
   weight: ["400"]
 })
 
@@ -47,7 +43,7 @@ const Projects = () => {
 
     const tabs = [
         {
-            title: "SOFTWARE DEVELOPMENT",
+            title: "CODING",
             // content:(
             //       <DevList devProjects={devProjects}/>
             // ),
@@ -77,8 +73,8 @@ const Projects = () => {
     };
 
     return (
-      <section>
-      <ScrollAnimate>
+      <section id="projects" className="h-full pt-10 overflow-hidden">
+<ScrollAnimate>
             <div className="pt-10">
             {/* render tabs */}
             <div className={`${tiltwarp.className} flex flex-row gap-1 text-center text-white`}>
@@ -93,13 +89,13 @@ const Projects = () => {
             </div>
 
             {/* render tab contents */}
-            <div className="bg-zinc-950 pt-5 pb-10 pl-3 pr-3 md:pl-20 md:pr-20 -top-[5]">
+            <div className="bg-zinc-950 pt-5 pb-10 pl-2 pr-2 md:pl-20 md:pr-20 -top-[5]">
                   {activeTab === 0 && <DevList devProjects={devProjects} />}
                   {activeTab === 1 && <TranslationList translationProjects={translationProjects} />}
                   {activeTab === 2 && <CreativeList creativeProjects={creativeProjects} />}
             </div>          
       </div>
-      </ScrollAnimate>
+</ScrollAnimate>
       </section>
  )
 }

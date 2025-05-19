@@ -1,32 +1,28 @@
 import React from 'react'
-import { Bungee_Inline, Patrick_Hand, Tilt_Warp, Kosugi} from 'next/font/google';
+import { Tilt_Warp, Kosugi, Mochiy_Pop_One} from 'next/font/google';
 import { FaGithub, FaGolang, FaReact } from 'react-icons/fa6'
 import {RiNextjsFill } from 'react-icons/ri'
-import { SiAdobeaftereffects, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript } from 'react-icons/si'
+import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript } from 'react-icons/si'
 import { BounceEffect } from '../components/BounceRevealEffect'
 import { ScrollAnimate } from '../components/ScrollAnimate'
 import Image from 'next/image'
-
-const bungee = Bungee_Inline({
-  weight: ["400"]
-})
-
-const smooch = Patrick_Hand({
-  weight: ["400"]
-})
 
 const tiltwarp = Tilt_Warp({
   weight: ["400"]
 })
 
-const mochiy = Kosugi({
+const kosugi = Kosugi({
+  weight: ["400"]
+})
+
+const mochiy = Mochiy_Pop_One({
   weight: ["400"]
 })
 
 const Skills = () => {
   return (
-    <section className="">
-    <ScrollAnimate>
+    <section id="skills" className="h-full pt-10 overflow-hidden">
+<ScrollAnimate>
       <div className="pt-15 pb-10 text-white text-center bg-gradient-to-b from-zinc-950 via-gray-400 to-zinc-950 pl-3 pr-3">
       <h1 className={`${tiltwarp.className} rainbow-text text-2xl text-transparent animate-gradient mb-3`}>Skill Stack</h1>
       <div className="grid grid-cols-2 gap-2 text-center">
@@ -49,7 +45,6 @@ const Skills = () => {
 
                       <BounceEffect delay={1.1} stiffness={100} damping={10}><FaGithub className="text-4xl text-zinc-700"/></BounceEffect>
 
-                      <BounceEffect delay={1.1} stiffness={100} damping={10}><FaGithub className="text-4xl text-zinc-700"/></BounceEffect>
                     </div>
             </div>
             <div className=" bg-gray-300 rounded-lg pb-2 shadow-lg">
@@ -60,6 +55,8 @@ const Skills = () => {
                     <BounceEffect delay={0.5} stiffness={100} damping={10}><SiAdobephotoshop className="text-4xl text-zinc-700"/></BounceEffect>
 
                     <BounceEffect delay={0.6} stiffness={100} damping={10}><SiAdobeaftereffects className="text-4xl text-zinc-700"/></BounceEffect>
+
+                    <BounceEffect delay={0.6} stiffness={100} damping={10}><SiAdobepremierepro className="text-4xl text-zinc-700"/></BounceEffect>
 
                     <BounceEffect delay={0.7} stiffness={100} damping={10}><SiBlender className="text-4xl text-zinc-700"/></BounceEffect>
 
@@ -76,7 +73,7 @@ const Skills = () => {
             </div>
       </div>
     </div>
-    </ScrollAnimate>
+</ScrollAnimate>
     </section>
   )
 }
