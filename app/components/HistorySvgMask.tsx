@@ -54,4 +54,4 @@ const HistorySvgMask = ({ className }: Props) => {
 
   export default HistorySvgMask;
 
-  //#0A0A0A
+  //#09090b

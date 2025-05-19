@@ -14,7 +14,7 @@ interface Props {
 
 export const BounceEffect = ({children, delay=0, stiffness = 300, damping = 50, x=0, y=75, className}: Props) => {
     const ref = useRef(null);
-        const isInView = useInView(ref, {once: false});
+        const isInView = useInView(ref, {once: true, amount: "some"});
     
         const mainControls = useAnimation();
     

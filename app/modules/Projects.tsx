@@ -1,5 +1,5 @@
 'use client'
-import { Tilt_Warp, Kosugi, Mochiy_Pop_One} from 'next/font/google';
+import { Tilt_Warp, M_PLUS_1p, RocknRoll_One} from 'next/font/google';
 import React, { useState } from 'react';
 import { getAllDev } from '../db/DevProjectsData';
 import DevList from '../components/DevModal/DevList';
@@ -16,11 +16,11 @@ const tiltwarp = Tilt_Warp({
   weight: ["400"]
 })
 
-const kosugi = Kosugi({
+const mplus = M_PLUS_1p({
   weight: ["400"]
 })
 
-const mochiy = Mochiy_Pop_One({
+const rock = RocknRoll_One({
   weight: ["400"]
 })
 
@@ -73,15 +73,16 @@ const Projects = () => {
     };
 
     return (
-      <section id="projects" className="h-full pt-10 overflow-hidden">
+      <section id="projects" className="overflow-hidden">
 <ScrollAnimate>
-            <div className="pt-10">
+            <div className="pt-5 text-center flex-col justify-center">
+            <h2 className={`${tiltwarp.className} mb-7 rainbow-text text-transparent animate-gradient text-4xl sm:text-5xl`}>Projects</h2>  
             {/* render tabs */}
             <div className={`${tiltwarp.className} flex flex-row gap-1 text-center text-white`}>
                   {tabs.map((tab, index) => (
                         <div
                               key={index}
-                              className={`w-full flex justify-center items-center pt-6 pb-6 cursor-pointer ${activeTab === index ? "rainbow-text text-transparent animate-gradient" : "bg-gradient-to-b from-zinc-600 to-zinc-950 hover:bg-gradient-to-b from-gray-300 to-zinc-950" }`}
+                              className={`w-full flex justify-center md:text-xl items-center pt-6 pb-6 cursor-pointer ${activeTab === index ? "rainbow-text text-transparent animate-gradient" : "bg-gradient-to-b from-gray-800 to-zinc-950 hover:bg-gradient-to-b from-gray-300 to-zinc-950" }`}
                               onClick={() => handleTabClick(index)}>
                               {tab.title}
                         </div>
@@ -89,7 +90,7 @@ const Projects = () => {
             </div>
 
             {/* render tab contents */}
-            <div className="bg-zinc-950 pt-5 pb-10 pl-2 pr-2 md:pl-20 md:pr-20 -top-[5]">
+            <div className="bg-zinc-950 pt-5 pb-10">
                   {activeTab === 0 && <DevList devProjects={devProjects} />}
                   {activeTab === 1 && <TranslationList translationProjects={translationProjects} />}
                   {activeTab === 2 && <CreativeList creativeProjects={creativeProjects} />}

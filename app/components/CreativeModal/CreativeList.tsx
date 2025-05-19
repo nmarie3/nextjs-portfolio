@@ -14,10 +14,10 @@ type CreativeProject = {
 const CreativeList = ({ creativeProjects }: { creativeProjects: CreativeProject[] }) => {
 
     return (
-        <div className="flex flex-wrap justify-between pl-2 pr-2">
+        <div className="flex justify-center flex-wrap pb-5 px-3">
             {creativeProjects.map((creativeProject, index) => (
                 <Link key={creativeProject.id} href={`/PageCreativeProjects/${creativeProject.id}`}>
-                    <div className="m-1 w-[100px] h-[100px] md:w-[200px] md:h-[200px] overflow-hidden">
+                    <div className="flex justify-start m-1 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px] overflow-hidden">
                     <BounceEffect delay={index * 0.2} stiffness={100} damping={10}>
                         <div className="w-full h-full object-cover">
                             <CreativeProjectDisplay creativeProject={creativeProject}/>

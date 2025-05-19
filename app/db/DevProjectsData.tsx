@@ -13,7 +13,7 @@ export type ProjectCard = {
     const devProjectsData: ProjectCard[] = [
     {
         id: "1",
-        title:"aegisub",
+        title:"SINoALICE",
         src: "",
         summary: "wvwebvaebeafvavebwerbqwerbwe",
         tools: [],

@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className="flex justify-between">
 
           {/*desktop*/}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden sm:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a key={link.href} href={link.href}
                 className={`text-gray-600 hover:text-gray-900 px-3 py-2 rounded-md text-md font-semibold transition-colors ${pathname === link.href ? "text-blue-600" : ""}`}>
@@ -76,7 +76,7 @@ const Navbar = () => {
         </div>
 
           {/*mobile*/}
-          <div className="md:hidden flex items-center">
+          <div className="sm:hidden flex items-center">
             <button onClick={() => setIsMobileOpen(!isMobileOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500">
                 {!isMobileOpen ? (

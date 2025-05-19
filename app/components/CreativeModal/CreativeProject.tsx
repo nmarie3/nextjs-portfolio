@@ -12,7 +12,7 @@ type CreativeProject = {
 const CreativeProject = ({ creativeProject }: { creativeProject: CreativeProject }) => {
 
     return (
-        <div className="w-[100px] h-[100px] md:w-[200px] md:h-[200px] relative group overflow-hidden rounded shadow-white">
+        <div className="w-[100px] h-[100px] sm:w-[150px] lg:h-[200px] lg:w-[200px] sm:h-[150px] relative group overflow-hidden rounded shadow-white">
             <img 
               src={creativeProject.src} 
               alt={creativeProject.title}

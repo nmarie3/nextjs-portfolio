@@ -9,7 +9,7 @@ type Props = {
 
 const HistorySvgMask = ({ className }: Props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
   const [keyIndex, setKeyIndex] = useState(0);
 
   useEffect(() => {

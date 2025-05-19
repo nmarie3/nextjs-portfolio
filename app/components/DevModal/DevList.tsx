@@ -14,11 +14,15 @@ type DevProject = {
 const DevList = ({ devProjects }: { devProjects: DevProject[] }) => {
 
     return (
-        <div className="flex flex-wrap justify-start">
+        <div className="flex justify-center flex-wrap pb-5 px-3">
             {devProjects.map((devProject, index) => (
                 <Link key={devProject.id} href={`/PageDevProjects/${devProject.id}`}>
-                    <div className="">
-                    <BounceEffect delay={index * 0.2} stiffness={100} damping={10}><DevProjectDisplay devProject={devProject} /></BounceEffect>
+                    <div className="flex justify-start m-1 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px] overflow-hidden">
+                    <BounceEffect delay={index * 0.2} stiffness={100} damping={10}>
+                        <div className="w-full h-full object-cover">
+                            <DevProjectDisplay devProject={devProject}/>
+                        </div>
+                        </BounceEffect>
                     </div>
                 </Link>
             ))}
