@@ -7,7 +7,7 @@ type Props = {
   className?: string;
 };
 
-const HistorySvgMask = ({ className }: Props) => {
+const HistorySvgMaskVerticle = ({ className }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const [keyIndex, setKeyIndex] = useState(0);
@@ -52,6 +52,6 @@ const HistorySvgMask = ({ className }: Props) => {
   );
 };
 
-  export default HistorySvgMask;
+  export default HistorySvgMaskVerticle;
 
   //#09090b

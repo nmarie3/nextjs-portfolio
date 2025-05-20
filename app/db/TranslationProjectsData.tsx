@@ -3,50 +3,100 @@ export type ProjectCard = {
     src: string;
     title:string;
     summary: string;
-    tools: string[];
+    tools: Tool[];
     link: string;
+    status: string;
+    type: string;
 }
+
+export type Tool = {
+  name: string;
+};
 
 export const translationProjectsData: ProjectCard[] = [
     {
         id: "1",
         title:"SINoALICE",
         src: "/translation_images/sinoalice.png",
-        summary: "qcqcq",
-        tools: [],
+        summary: "Mobile game",
+        tools: [
+
+        ],
         link: "",
+        status: "Role Ended",
+        type: "Professional",
     },
     {
         id: "2",
         title:"Another Eden",
         src: "/translation_images/anotherEden.jpg",
-        summary: "jgjfv,",
-        tools: [],
+        summary: "Mobile and Steam PC game",
+        tools: [
+
+        ],
         link: "",
+        status:"Role Ended",
+        type: "Professional",
     },
     {
         id: "3",
-        title:"Gran Blue Fantasy",
+        title:"GranBlue Fantasy",
         src: "/translation_images/granblue.jpg",
-        summary: "granblue",
-        tools: [],
+        summary: "Mobile game",
+        tools: [
+
+        ],
         link: "",
+        status:"Role Ended",
+        type: "Professional",
     },
     {
         id: "4",
         title:"One Piece Treasure Cruise",
         src: "/translation_images/onepiece.jpg",
-        summary: "qcqcq",
-        tools: [],
+        summary: "Mobile game",
+        tools: [
+
+        ],
         link: "",
+        status:"Role Ended",
+        type: "Professional",
     },
     {
-        id: "4",
-        title:"Live Action Mahou Sensei Negima",
+        id: "5",
+        title:"Live Action Mahou Sensei Negima!",
         src: "/translation_images/negima.png",
-        summary: "qcqcq",
-        tools: ["Aegisub"],
+        summary: "実写化ドラマ 魔法先生ネギま！",
+        tools: [
+
+        ],
         link: "",
+        status:"Ongoing",
+        type: "Hobby",
+    },
+    {
+        id: "6",
+        title:"Real Zero: Another Edition",
+        src: "/translation_images/realZero.png",
+        summary: "FOMA 900i, 901i, 902i series mobile phones",
+        tools: [
+  
+        ],
+        link: "",
+        status: "Ongoing",
+        type: "Hobby",
+    },
+        {
+        id: "7",
+        title:"Manga",
+        src: "/translation_images/mangacollage.png",
+        summary: "・フリーランス日英漫画翻訳<br />・翻訳サークル日英漫画翻訳",
+        tools: [
+
+        ],
+        link: "",
+        status: "Ongoing",
+        type: "Professional & Hobby",
     },
 ]
 

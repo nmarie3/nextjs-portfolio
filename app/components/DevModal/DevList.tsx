@@ -3,12 +3,18 @@ import DevProjectDisplay from "./DevProject";
 import { BounceEffect } from "../BounceRevealEffect";
 
 type DevProject = {
-  id: string;
-  src: string;
-  title:string;
-  summary: string;
-  tools: string[];
-  link: string;
+    id: string;
+    src: string;
+    title:string;
+    summary: string;
+    tools: Tool[];
+    link: string;
+    status: string;
+    type: string;
+}
+
+export type Tool = {
+  name: string;
 };
 
 const DevList = ({ devProjects }: { devProjects: DevProject[] }) => {
@@ -18,7 +24,7 @@ const DevList = ({ devProjects }: { devProjects: DevProject[] }) => {
             {devProjects.map((devProject, index) => (
                 <Link key={devProject.id} href={`/PageDevProjects/${devProject.id}`}>
                     <div className="flex justify-start m-1 w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px] overflow-hidden">
-                    <BounceEffect delay={index * 0.2} stiffness={100} damping={10}>
+                    <BounceEffect delay={index * 0.1} stiffness={100} damping={10}>
                         <div className="w-full h-full object-cover">
                             <DevProjectDisplay devProject={devProject}/>
                         </div>

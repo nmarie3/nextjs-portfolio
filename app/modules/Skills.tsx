@@ -2,7 +2,7 @@ import React from 'react'
 import { Tilt_Warp, M_PLUS_1p, RocknRoll_One} from 'next/font/google';
 import { FaGithub, FaGolang, FaReact } from 'react-icons/fa6'
 import {RiNextjsFill } from 'react-icons/ri'
-import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript } from 'react-icons/si'
+import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript, SiThreedotjs } from 'react-icons/si'
 import { BounceEffect } from '../components/BounceRevealEffect'
 import { ScrollAnimate } from '../components/ScrollAnimate'
 import Image from 'next/image'
@@ -43,7 +43,9 @@ const Skills = () => {
 
                       <BounceEffect delay={1} stiffness={100} damping={10}><FaGolang className="text-7xl lg:text-8xl  text-zinc-700"/></BounceEffect>
 
-                      <BounceEffect delay={1.1} stiffness={100} damping={10}><FaGithub className="text-7xl lg:text-8xl text-zinc-700"/></BounceEffect>
+                      <BounceEffect delay={1.1} stiffness={100} damping={10}><SiThreedotjs className="text-7xl lg:text-8xl text-zinc-700"/></BounceEffect>
+
+                      <BounceEffect delay={1.2} stiffness={100} damping={10}><FaGithub className="text-7xl lg:text-8xl text-zinc-700"/></BounceEffect>
 
                     </div>
             </div>

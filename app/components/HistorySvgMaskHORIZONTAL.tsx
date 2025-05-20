@@ -7,9 +7,9 @@ type Props = {
   className?: string;
 };
 
-const HistorySvgMask = ({ className }: Props) => {
+const HistorySvgMaskHorizontal = ({ className }: Props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: false });
+  const isInView = useInView(ref, { once: true });
   const [keyIndex, setKeyIndex] = useState(0);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const HistorySvgMask = ({ className }: Props) => {
   return (
 
  <div ref={ref}>
-      <svg id="Layer_7" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 585.8 218.39" className={className} preserveAspectRatio="xMidYMid meet">
+      <svg id="Layer_7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600.01 250.07" className={className} preserveAspectRatio="xMidYMid meet">
         <motion.path
           key={keyIndex}
           initial={{
@@ -45,13 +45,13 @@ const HistorySvgMask = ({ className }: Props) => {
             strokeMiterlimit: 0,
             strokeWidth: "100px",
           }}
-            d="M554.05,8.48s9.91,45.65,10.3,68.59c.35,20.26-10.45,25.57-17.99,29.88-60.55,34.59-198.53-60.37-377.06-49.82-27.95,1.65-106.27,10.4-126.13,65.76-17.43,48.58,42.06,96.67,50.67,105.83"
+            d="M531.45,41.96c34.56,49.22,30.95,68.43,25.52,76.8-9.67,14.9-37.47,14.15-167.58-4.16-75.78-10.66-72.55-11.88-99.34-14.89-74.96-8.4-208.51-23.37-242.29,34.44-5.62,9.62-22.03,44.46,21.21,120.76"
          />
       </svg>
     </div>
   );
 };
 
-  export default HistorySvgMask;
+  export default HistorySvgMaskHorizontal;
 
   //#09090b

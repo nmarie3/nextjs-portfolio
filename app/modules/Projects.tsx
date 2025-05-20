@@ -25,13 +25,19 @@ const rock = RocknRoll_One({
 })
 
 export type ProjectCard = {
-    id: number;
+    id: string;
     src: string;
-    title: string;
+    title:string;
     summary: string;
-    tools: string[];
+    tools: Tool[];
     link: string;
+    status: string;
+    type: string;
 }
+
+export type Tool = {
+  name: string;
+};
 
 
 const Projects = () => {
@@ -43,7 +49,7 @@ const Projects = () => {
 
     const tabs = [
         {
-            title: "CODING",
+            title: "DEV",
             // content:(
             //       <DevList devProjects={devProjects}/>
             // ),
@@ -58,7 +64,7 @@ const Projects = () => {
 
         },
         {
-            title: "ARTWORK",
+            title: "CREATIVE",
             // content:(
             //       <div>
             //       <CreativeList creativeProjects={creativeProjects}/>

@@ -4,8 +4,14 @@ type CreativeProject = {
     src: string;
     title:string;
     summary: string;
-    tools: string[];
+    tools: Tool[];
     link: string;
+    status: string;
+    type: string;
+}
+
+export type Tool = {
+  name: string;
 };
 
 
