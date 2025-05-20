@@ -69,7 +69,7 @@ export type Tool = {
         src: "/art_images/Pikachu_Donut.png",
         summary: "",
         tools: [
-            {name: ""},
+            {name: "Blender 3D"},
         ],
         link: "",
         status:"",

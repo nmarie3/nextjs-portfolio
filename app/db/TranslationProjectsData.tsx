@@ -68,7 +68,7 @@ export const translationProjectsData: ProjectCard[] = [
         src: "/translation_images/negima.png",
         summary: "実写化ドラマ 魔法先生ネギま！",
         tools: [
-
+            {name: "Aegisub"},
         ],
         link: "",
         status:"Ongoing",
