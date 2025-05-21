@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "./modules/Hero";
 import Projects from "./modules/Projects";
 import History from "./modules/History";

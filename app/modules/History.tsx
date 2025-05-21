@@ -1,5 +1,5 @@
 'use client'
-import { Tilt_Warp, M_PLUS_1p, RocknRoll_One} from 'next/font/google';
+import { Tilt_Warp, M_PLUS_1p} from 'next/font/google';
 import { BounceEffect } from '../components/BounceRevealEffect';
 import { ScrollAnimate } from '../components/ScrollAnimate';
 import HistorySvgHorizontal from '../components/HistorySvgHORIZONTAL';
