@@ -54,7 +54,7 @@ export type Tool = {
     {
         id: "4",
         title:"Yukata LycoReco",
-        src: "/art_images/Yukata_Chisataki.png",
+        src: "/art_images/Yukata_ChisaTaki.png",
         summary: "",
         tools: [
             {name: "Photoshop"},
@@ -66,7 +66,7 @@ export type Tool = {
     {
         id: "5",
         title:"Pikachu Donut",
-        src: "/art_images/Pikachu_Donut.png",
+        src: "/art_images/Pikachu_Donut.jpg",
         summary: "",
         tools: [
             {name: "Blender 3D"},
@@ -90,7 +90,7 @@ export type Tool = {
     {
         id: "7",
         title:"Taiyaki",
-        src: "/art_images/Taiyaki.png",
+        src: "/art_images/Taiyaki.jpg",
         summary: "",
         tools: [
             {name: "Blender 3D"},
@@ -127,7 +127,7 @@ export type Tool = {
         id: "10",
         title:"Pikachu Run",
         src: "/art_images/Pikachu_Run.gif",
-        summary: "2D animation of Pikachu running.",
+        summary: "",
         tools: [
             {name: "Photoshop"},
         ],
@@ -162,7 +162,7 @@ export type Tool = {
     {
         id: "13",
         title:"The Devil",
-        src: "/art_images/The_Devil.png",
+        src: "/art_images/The_Devil.jpg",
         summary: "",
         tools: [
             {name: "Photoshop"},
@@ -234,7 +234,7 @@ export type Tool = {
     {
         id: "19",
         title:"Osechi",
-        src: "/art_images/Osechi.png",
+        src: "/art_images/osechi.png",
         summary: "",
         tools: [
             {name: "Photoshop"},
@@ -246,7 +246,7 @@ export type Tool = {
     {
         id: "20",
         title:"Higurashi Watanagashi",
-        src: "/art_images/SatoRika_Watanagashi.png",
+        src: "/art_images/SatoRika_Watanagashi.jpg",
         summary: "",
         tools: [
             {name: "Adobe Sketch"},
@@ -258,7 +258,7 @@ export type Tool = {
     {
         id: "21",
         title:"Higurashi Hinamizawa",
-        src: "/art_images/SatoRika_Hinamizawa.png",
+        src: "/art_images/SatoRika_Hinamizawa.jpg",
         summary: "",
         tools: [
             {name: "Adobe Sketch"},
