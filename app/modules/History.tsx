@@ -62,13 +62,13 @@ const History = () => {
                     {/*fadeIn history details*/}
                     <div className={`${mplus.className} absolute text-stone-300 inset-0  pointer-events-none z-30`}>
 
-                      <h4 className="absolute text-right md:right-[4%] md:top-[62%] md:text-2xl lg:right-[6%] lg:top-[62%] lg:text-3xl xl:right-[5%] xl:top-[55%] xl:text-4xl"><BounceEffect delay={0.6}><span className="md:text-lg lg:text-xl xl:text-2xl">2013年</span><br />大学卒</BounceEffect></h4>
+                      <h4 className="absolute text-right md:right-[4%] md:top-[59%] md:text-2xl lg:right-[6%] lg:top-[62%] lg:text-3xl xl:right-[5%] xl:top-[55%] xl:text-4xl"><BounceEffect delay={0.6}><span className="md:text-lg lg:text-xl xl:text-2xl">2013年</span><br />大学卒</BounceEffect></h4>
 
-                      <h4 className="absolute text-right md:right-[23%] md:top-[22%] md:text-2xl lg:right-[23%] lg:top-[28%] lg:text-3xl xl:right-[22%] xl:top-[22%] xl:text-4xl"><BounceEffect delay={0.8}><span className="md:text-lg lg:text-xl xl:text-2xl">2014年</span><br />英語教師</BounceEffect></h4>
+                      <h4 className="absolute text-right md:right-[23%] md:top-[19%] md:text-2xl lg:right-[23%] lg:top-[28%] lg:text-3xl xl:right-[22%] xl:top-[22%] xl:text-4xl"><BounceEffect delay={0.8}><span className="md:text-lg lg:text-xl xl:text-2xl">2014年</span><br />英語教師</BounceEffect></h4>
 
                       <h4 className="absolute text-left md:left-[42%] md:top-[53%] md:text-2xl lg:left-[43%] lg:top-[53%] lg:text-3xl xl:left-[40%] xl:top-[48%] xl:text-4xl"><BounceEffect delay={1}><span className="md:text-lg lg:text-xl xl:text-2xl">2016年</span><br />映像撮影・編集<br /></BounceEffect></h4>
 
-                      <h4 className="absolute text-left md:left-[10%] md:top-[14%] md:text-2xl lg:left-[11%] lg:top-[17%] lg:text-3xl xl:left-[10%] xl:top-[13%] xl:text-4xl"><BounceEffect delay={1.2}><span className="md:text-lg lg:text-xl xl:text-2xl">2017年</span><br />ゲーム業界で日英翻訳者</BounceEffect></h4>
+                      <h4 className="absolute text-left md:left-[10%] md:top-[10%] md:text-2xl lg:left-[11%] lg:top-[17%] lg:text-3xl xl:left-[10%] xl:top-[13%] xl:text-4xl"><BounceEffect delay={1.2}><span className="md:text-lg lg:text-xl xl:text-2xl">2017年</span><br />ゲーム業界で日英翻訳者</BounceEffect></h4>
 
                       <h4 className="absolute text-left md:left-[14%] md:bottom-[3%] md:text-2xl lg:left-[14%] lg:bottom-[3%] lg:text-3xl xl:left-[14%] xl:bottom-[5%] xl:text-4xl"><BounceEffect delay={1.4}><span className="md:text-lg lg:text-xl xl:text-2xl">2024年</span><br />フロントエンドエンジニア</BounceEffect></h4>
                     </div>
