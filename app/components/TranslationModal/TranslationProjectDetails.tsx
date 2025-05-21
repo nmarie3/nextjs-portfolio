@@ -57,7 +57,7 @@ const TranslationProjectDetails = ({ translationProject }: Props) => {
       )}
       {/*dont show if empty array*/}
       {translationProject.tools.length > 0 && (
-        <div className="flex items-center gap-2">
+        <div className="flex items-center flex-wrap gap-2">
           {translationProject.tools.map((tool, index) => (
             <span key={index} className="text-center mt-3 bg-blue-400 text-white p-1 rounded-sm">
               {tool.name}
