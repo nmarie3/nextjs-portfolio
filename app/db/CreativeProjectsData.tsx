@@ -137,7 +137,7 @@ export type Tool = {
     },
     {
         id: "11",
-        title:"The High Priestess",
+        title:"The High Priestess Tarot Card",
         src: "/art_images/The_High_Priestess.png",
         summary: "",
         tools: [
@@ -149,7 +149,7 @@ export type Tool = {
     },
     {
         id: "12",
-        title:"The Magician",
+        title:"The Magician Tarot Card",
         src: "/art_images/The_Magician.png",
         summary: "",
         tools: [
@@ -161,7 +161,7 @@ export type Tool = {
     },
     {
         id: "13",
-        title:"The Devil",
+        title:"The Devil Tarot Card",
         src: "/art_images/The_Devil.jpg",
         summary: "",
         tools: [
@@ -173,7 +173,7 @@ export type Tool = {
     },
     {
         id: "14",
-        title:"The Emperor",
+        title:"The Emperor Tarot Card",
         src: "/art_images/The_Emperor.png",
         summary: "",
         tools: [
@@ -185,7 +185,7 @@ export type Tool = {
     },
     {
         id: "15",
-        title:"The Tower",
+        title:"The Tower Tarot Card",
         src: "/art_images/The_Tower.png",
         summary: "",
         tools: [
@@ -221,7 +221,7 @@ export type Tool = {
     },
     {
         id: "18",
-        title:"Yamper Card",
+        title:"Yamper Pokemon Card",
         src: "/art_images/Yamper_Card.gif",
         summary: "",
         tools: [

@@ -27,7 +27,7 @@ export type Tool = {
             {name: "Typescript"},
             {name: "Framer Motion"},
             {name: "Tailwind CSS"},
-            {name: "Adobe XD"},
+            {name: "Adobe Xd"},
             {name: "Illustrator"},
         ],
         link: "https://github.com/nmarie3/nextjs-portfolio",
@@ -51,7 +51,7 @@ export type Tool = {
         id: "3",
         title:"Spud's Space Splash",
         src: "/dev_images/spud.png",
-        summary: "20 Sec. Game Jam submission",
+        summary: "Itch.io 20 Sec. Game Jam submission",
         tools: [
             {name: "Game Maker"},
         ],
