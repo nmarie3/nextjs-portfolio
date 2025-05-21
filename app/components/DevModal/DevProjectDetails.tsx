@@ -21,7 +21,8 @@ interface Props {
 }
 
 const mplus = M_PLUS_1p({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
 const DevProjectDetails = ({ devProject }: Props) => {

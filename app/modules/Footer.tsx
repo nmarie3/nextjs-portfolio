@@ -1,20 +1,14 @@
 import React from 'react'
-import { Tilt_Warp, M_PLUS_1p, RocknRoll_One} from 'next/font/google';
+import { Tilt_Warp} from 'next/font/google';
 import { ScrollAnimate } from '../components/ScrollAnimate'
 import { MdEmail } from "react-icons/md";
 import { FaGithub } from 'react-icons/fa6'
 
 const tiltwarp = Tilt_Warp({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
-const mplus = M_PLUS_1p({
-  weight: ["400"]
-})
-
-const rock = RocknRoll_One({
-  weight: ["400"]
-})
 
 const Footer = () => {
   return (

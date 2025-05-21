@@ -1,5 +1,5 @@
 'use client'
-import { Tilt_Warp, M_PLUS_1p, RocknRoll_One} from 'next/font/google';
+import { Tilt_Warp} from 'next/font/google';
 import React, { useState } from 'react';
 import { getAllDev } from '../db/DevProjectsData';
 import DevList from '../components/DevModal/DevList';
@@ -8,21 +8,13 @@ import TranslationList from '../components/TranslationModal/TranslationList';
 import { getAllCreative } from '../db/CreativeProjectsData';
 import CreativeList from '../components/CreativeModal/CreativeList';
 import { ScrollAnimate } from '../components/ScrollAnimate';
-import { BounceEffect } from '../components/BounceRevealEffect';
-import { SlideEffect } from '../components/SlideRevealEffect';
 
 
 const tiltwarp = Tilt_Warp({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
-const mplus = M_PLUS_1p({
-  weight: ["400"]
-})
-
-const rock = RocknRoll_One({
-  weight: ["400"]
-})
 
 export type ProjectCard = {
     id: string;

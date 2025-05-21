@@ -1,25 +1,23 @@
 'use client'
-import Image from 'next/image'
 import React from 'react'
-import { Bungee_Inline, Tilt_Warp, M_PLUS_1p, RocknRoll_One} from 'next/font/google';
-//import { BounceEffect } from '../components/BounceRevealEffect';
+import { Bungee_Inline, M_PLUS_1p, RocknRoll_One} from 'next/font/google';
 import { SlideEffect } from '../components/SlideRevealEffect';
 import { ScrollAnimate } from '../components/ScrollAnimate';
 
 const bungee = Bungee_Inline({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
-const tiltwarp = Tilt_Warp({
-  weight: ["400"]
-})
 
 const mplus = M_PLUS_1p({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
 const rock = RocknRoll_One({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
 const Hero = () => {

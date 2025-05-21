@@ -2,28 +2,7 @@
 import {useState, useEffect} from 'react';
 import { usePathname } from 'next/navigation';
 import {BiMenu, BiX} from "react-icons/bi";
-import { Bungee_Inline, Patrick_Hand, Tilt_Warp, Kosugi, Sawarabi_Gothic} from 'next/font/google';
 
-
-const bungee = Bungee_Inline({
-  weight: ["400"]
-})
-
-const smooch = Patrick_Hand({
-  weight: ["400"]
-})
-
-const tiltwarp = Tilt_Warp({
-  weight: ["400"]
-})
-
-const mochiy = Kosugi({
-  weight: ["400"]
-})
-
-const gothic = Sawarabi_Gothic({
-  weight: ["400"]
-})
 
 const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true);

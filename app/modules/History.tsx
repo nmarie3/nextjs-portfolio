@@ -8,16 +8,15 @@ import HistorySvgVerticle from '../components/HistorySvgVERTICLE';
 import HistorySvgMaskVerticle from '../components/HistorySvgMaskVERTICLE';
 
 const tiltwarp = Tilt_Warp({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
 const mplus = M_PLUS_1p({
-  weight: ["400"]
+  weight: ["400"],
+  subsets: ['latin'],
 })
 
-const rock = RocknRoll_One({
-  weight: ["400"]
-})
 
 
 const History = () => {
