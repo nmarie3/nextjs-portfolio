@@ -36,7 +36,7 @@ export type Tool = {
     },
     {
         id: "2",
-        title:"Idol Landing Page (Copy)",
+        title:"Idol Landing Page",
         src: "/dev_images/idol.png",
         summary: "",
         tools: [
@@ -45,7 +45,7 @@ export type Tool = {
         ],
         link: "https://github.com/nmarie3/idol-LP",
         status:"",
-        type: "",
+        type: "Practice project",
     },
     {
         id: "3",
@@ -75,7 +75,7 @@ export type Tool = {
     },
     {
         id: "5",
-        title:"07th Expansion Landing Page (Copy)",
+        title:"07th Expansion Landing Page",
         src: "/dev_images/07th.png",
         summary: "",
         tools: [
@@ -84,11 +84,11 @@ export type Tool = {
         ],
         link: "https://github.com/nmarie3/CenterForce-/tree/main/HTML%E3%83%BBCSS/07expansion-ts-copy",
         status:"",
-        type: "",
+        type: "Practice project",
     },
         {
         id: "6",
-        title:"Black Thunder Landing Page (Copy)",
+        title:"Black Thunder Landing Page",
         src: "/dev_images/blackThunder.png",
         summary: "",
         tools: [
@@ -97,7 +97,7 @@ export type Tool = {
         ],
         link: "https://github.com/nmarie3/CenterForce-/tree/main/HTML%E3%83%BBCSS/bthunder-ts-copy",
         status:"",
-        type: "",
+        type: "Practice project",
     },
     {
         id: "7",
