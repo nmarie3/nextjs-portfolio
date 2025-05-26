@@ -23,8 +23,8 @@ export const translationProjectsData: ProjectCard[] = [
 
         ],
         link: "",
-        status: "Role Ended",
-        type: "Professional",
+        status: "契約終了",
+        type: "仕事",
     },
     {
         id: "2",
@@ -35,8 +35,8 @@ export const translationProjectsData: ProjectCard[] = [
 
         ],
         link: "",
-        status:"Role Ended",
-        type: "Professional",
+        status:"制約終了",
+        type: "仕事",
     },
     {
         id: "3",
@@ -47,8 +47,8 @@ export const translationProjectsData: ProjectCard[] = [
 
         ],
         link: "",
-        status:"Role Ended",
-        type: "Professional",
+        status:"契約終了",
+        type: "仕事",
     },
     {
         id: "4",
@@ -59,8 +59,8 @@ export const translationProjectsData: ProjectCard[] = [
 
         ],
         link: "",
-        status:"Role Ended",
-        type: "Professional",
+        status:"契約終了",
+        type: "仕事",
     },
     {
         id: "5",
@@ -71,8 +71,8 @@ export const translationProjectsData: ProjectCard[] = [
             {name: "Aegisub"},
         ],
         link: "",
-        status:"Ongoing",
-        type: "Hobby",
+        status:"進行中",
+        type: "趣味",
     },
     {
         id: "6",
@@ -83,8 +83,8 @@ export const translationProjectsData: ProjectCard[] = [
   
         ],
         link: "",
-        status: "Ongoing",
-        type: "Hobby",
+        status: "進行中",
+        type: "趣味",
     },
         {
         id: "7",
@@ -95,8 +95,8 @@ export const translationProjectsData: ProjectCard[] = [
 
         ],
         link: "",
-        status: "Ongoing",
-        type: "Professional & Hobby",
+        status: "進行中",
+        type: "仕事 & 趣味",
     },
 ]
 
