@@ -28,6 +28,18 @@ export type Tool = {
     },
     {
         id: "2",
+        title:"Crypto Currency Platform",
+        src: "/art_images/bexam.gif",
+        summary: "",
+        tools: [
+            {name: "After Effects"},
+        ],
+        link: "",
+        status:"",
+        type: "仕事",
+    },
+    {
+        id: "3",
         title:"Space Birthday Cake",
         src: "/art_images/Space_Birthday_Cake.gif",
         summary: "",
@@ -39,7 +51,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "3",
+        id: "4",
         title:"Sailor Venus Transformation",
         src: "/art_images/Sailor_V_Transformation.gif",
         summary: "",
@@ -52,7 +64,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "4",
+        id: "5",
         title:"Yukata LycoReco",
         src: "/art_images/Yukata_ChisaTaki.png",
         summary: "",
@@ -64,7 +76,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "5",
+        id: "6",
         title:"Pikachu Donut",
         src: "/art_images/Pikachu_Donut.jpg",
         summary: "",
@@ -76,7 +88,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "6",
+        id: "7",
         title:"Pikachu Thunderbolt",
         src: "/art_images/PiKaChuuu.gif",
         summary: "",
@@ -88,7 +100,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "7",
+        id: "8",
         title:"Taiyaki",
         src: "/art_images/Taiyaki.jpg",
         summary: "",
@@ -100,7 +112,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "8",
+        id: "9",
         title:"Swimming Fish",
         src: "/art_images/Swimming_Fish.gif",
         summary: "",
@@ -112,7 +124,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "9",
+        id: "10",
         title:"Switch",
         src: "/art_images/Switch.gif",
         summary: "",
@@ -124,7 +136,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "10",
+        id: "11",
         title:"Pikachu Run",
         src: "/art_images/Pikachu_Run.gif",
         summary: "",
@@ -136,7 +148,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "11",
+        id: "12",
         title:"The High Priestess Tarot Card",
         src: "/art_images/The_High_Priestess.png",
         summary: "",
@@ -148,7 +160,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "12",
+        id: "13",
         title:"The Magician Tarot Card",
         src: "/art_images/The_Magician.png",
         summary: "",
@@ -160,7 +172,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "13",
+        id: "14",
         title:"The Devil Tarot Card",
         src: "/art_images/The_Devil.jpg",
         summary: "",
@@ -172,7 +184,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "14",
+        id: "15",
         title:"The Emperor Tarot Card",
         src: "/art_images/The_Emperor.png",
         summary: "",
@@ -184,7 +196,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "15",
+        id: "16",
         title:"The Tower Tarot Card",
         src: "/art_images/The_Tower.png",
         summary: "",
@@ -196,7 +208,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "16",
+        id: "17",
         title:"Merry Christmas Horses",
         src: "/art_images/Merry_Christmas_Horses.jpg",
         summary: "",
@@ -208,7 +220,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "17",
+        id: "18",
         title:"Merry Christmas Corgi",
         src: "/art_images/Merry_Christmas_Corgi.jpg",
         summary: "",
@@ -220,7 +232,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "18",
+        id: "19",
         title:"Yamper Pokemon Card",
         src: "/art_images/Yamper_Card.gif",
         summary: "",
@@ -232,7 +244,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "19",
+        id: "20",
         title:"Osechi",
         src: "/art_images/osechi.png",
         summary: "",
@@ -244,7 +256,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "20",
+        id: "21",
         title:"Higurashi Watanagashi",
         src: "/art_images/SatoRika_Watanagashi.jpg",
         summary: "",
@@ -256,7 +268,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "21",
+        id: "22",
         title:"Higurashi Hinamizawa",
         src: "/art_images/SatoRika_Hinamizawa.jpg",
         summary: "",
