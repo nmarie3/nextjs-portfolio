@@ -70,7 +70,7 @@ const History = () => {
 
                       <h4 className="absolute text-left md:left-[10%] md:top-[10%] md:text-2xl lg:left-[11%] lg:top-[17%] lg:text-3xl xl:left-[10%] xl:top-[13%] xl:text-4xl"><BounceEffect delay={1.2}><span className="md:text-lg lg:text-xl xl:text-2xl">2017年</span><br />ゲーム業界で日英翻訳者</BounceEffect></h4>
 
-                      <h4 className="absolute text-left md:left-[14%] md:bottom-[3%] md:text-2xl lg:left-[14%] lg:bottom-[3%] lg:text-3xl xl:left-[14%] xl:bottom-[5%] xl:text-4xl"><BounceEffect delay={1.4}><span className="md:text-lg lg:text-xl xl:text-2xl">2024年</span><br />フロントエンドエンジニア</BounceEffect></h4>
+                      <h4 className="absolute text-left md:left-[14%] md:bottom-[3%] md:text-2xl lg:left-[14%] lg:bottom-[3%] lg:text-3xl xl:left-[14%] xl:bottom-[10%] xl:text-4xl"><BounceEffect delay={1.4}><span className="md:text-lg lg:text-xl xl:text-2xl">2024年</span><br />フロントエンドエンジニア</BounceEffect></h4>
                     </div>
           </div>
 

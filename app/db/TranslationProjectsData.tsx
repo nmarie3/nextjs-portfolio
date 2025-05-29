@@ -90,7 +90,7 @@ export const translationProjectsData: ProjectCard[] = [
         id: "7",
         title:"Manga",
         src: "/translation_images/mangacollage.png",
-        summary: "・フリーランス日英漫画翻訳<br />・翻訳サークル日英漫画翻訳",
+        summary: "・フリーランス日英漫画翻訳",
         tools: [
 
         ],
