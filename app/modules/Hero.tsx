@@ -37,7 +37,7 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-4 flex-col justify-center text-center"><SlideEffect delay={0.5} duration={1.5}>
-            <h1 className={`${rock.className} mb-1 rainbow-text text-2xl sm:text-4xl text-transparent animate-gradient pb-5`}>「好きなことを仕事に」<br />学びながら成長していく</h1>
+            <h1 className={`${rock.className} mb-1 rainbow-text text-2xl sm:text-4xl text-transparent animate-gradient pb-5`}>&quot;好きなことを仕事に&quot;<br />学びながら成長していく</h1>
             <h2 className={`${mplus.className} text-white text-based sm:text-lg text-justify pb-15 px-2`}>はじめまして、ナターシャです。<br />
             これまで数年間、翻訳家としてキャリアを積んできましたが、新しい世界に挑戦したいという思いから、現在はエンジニアとしてウェブ開発やアプリ開発に取り組んでいます。
             今でも翻訳の仕事を続けていて、ファンコミュニティ向けの翻訳を中心に、フリーランスとして楽しく活動中です。
@@ -57,7 +57,7 @@ const Hero = () => {
     <div className="px-5 flex justify-center">
       <div className="md:grid md:grid-cols-[60%_40%] lg:grid-cols-[60%_40%] gap-3 items-center">
         <div className="flex flex-col justify-center items-center text-center"><SlideEffect x={-75} y={0} delay={0.8} duration={1}>
-            <h1 className={`${rock.className} mb-5 rainbow-text text-right text-base md:text-4xl lg:text-5xl  text-transparent animate-gradient`}>「好きなことを仕事に」<br />学びながら成長していく</h1>
+            <h1 className={`${rock.className} mb-5 rainbow-text text-right text-base md:text-4xl lg:text-5xl  text-transparent animate-gradient`}>&quot;好きなことを仕事に&quot;<br />学びながら成長していく</h1>
             <h2 className={`${mplus.className} text-white text-right md:text-xl lg:text-2xl pt-3`}>はじめまして、ナターシャです。</h2>
             <h2 className={`${mplus.className} text-white text-justify md:text-xl lg:text-2xl pb-3 px-3 lg:pl-25`}>
             これまで数年間、翻訳家としてキャリアを積んできましたが、新しい世界に挑戦したいという思いから、現在はエンジニアとしてウェブ開発やアプリ開発に取り組んでいます。
@@ -84,4 +84,3 @@ const Hero = () => {
 export default Hero
 
 
-//&quot;
