@@ -45,6 +45,7 @@ export type Tool = {
             {name: "Three.js"},
             {name: "React"},
             {name: "Javascript"},
+            {name: "Vite"},
             {name: "Tailwind CSS"},
         ],
         link1: "https://github.com/nmarie3/threejs-cafeLR",
