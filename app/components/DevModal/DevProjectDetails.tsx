@@ -7,7 +7,8 @@ export type DevProject = {
     title:string;
     summary: string;
     tools: Tool[];
-    link: string;
+    link1: string;
+    link2: string;
     status: string;
     type: string;
 }
@@ -46,7 +47,7 @@ const DevProjectDetails = ({ devProject }: Props) => {
       </div>
       {/*dont show if empty string*/}
       {devProject.summary.trim() !== '' && (
-        <div className="my-2 mx-2 p-2 text-lg text-center">
+        <div className="mt-2 mx-2 p-2 text-lg text-center">
           {devProject.summary.split('<br />').map((line, index) => (
             <span key={index}>
               {line}
@@ -67,9 +68,14 @@ const DevProjectDetails = ({ devProject }: Props) => {
       )}
       {/*end*/}
       {/*dont show if empty string*/}
-      {devProject.link && (
-        <h2 className="text-sm mt-3 underline"><a href={devProject.link} target="_blank" rel="noopener noreferrer">View Project</a></h2>
+      <div className="flex justify-between gap-10">
+      {devProject.link1 && (
+        <h2 className="text-sm mt-3 underline"><a href={devProject.link1} target="_blank" rel="noopener noreferrer">View Code</a></h2>
       )}
+      {devProject.link2 && (
+        <h2 className="text-sm mt-3 underline"><a href={devProject.link2} target="_blank" rel="noopener noreferrer">View Project</a></h2>
+      )}
+      </div>
       {/*end*/}
     </div>
   );

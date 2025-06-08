@@ -46,7 +46,7 @@ const TranslationProjectDetails = ({ translationProject }: Props) => {
       </div>
       {/*dont show if empty string*/}
       {translationProject.summary.trim() !== '' && (
-        <div className="my-2 mx-2 p-2 text-lg text-center">
+        <div className="mt-2 mx-2 p-2 text-lg text-center">
           {translationProject.summary.split('<br />').map((line, index) => (
             <span key={index}>
               {line}

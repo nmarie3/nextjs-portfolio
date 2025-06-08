@@ -8,7 +8,8 @@ type DevProject = {
     title:string;
     summary: string;
     tools: Tool[];
-    link: string;
+    link1: string;
+    link2: string;
     status: string;
     type: string;
 }

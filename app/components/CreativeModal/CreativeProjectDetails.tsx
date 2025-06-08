@@ -46,7 +46,7 @@ const CreativeProjectDetails = ({ creativeProject}: Props) => {
       </div>
       {/*dont show if empty string*/}
       {creativeProject.summary.trim() !== '' && (
-        <div className="my-2 mx-2 p-2 text-lg text-center">
+        <div className="mt-2 mx-2 p-2 text-lg text-center">
           {creativeProject.summary.split('<br />').map((line, index) => (
             <span key={index}>
               {line}
