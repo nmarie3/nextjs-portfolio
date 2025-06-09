@@ -47,6 +47,7 @@ export type Tool = {
             {name: "Javascript"},
             {name: "Vite"},
             {name: "Tailwind CSS"},
+            {name: "Photoshop"},
         ],
         link1: "https://github.com/nmarie3/threejs-cafeLR",
         link2: "https://cafelycoreco-menu.netlify.app/",
