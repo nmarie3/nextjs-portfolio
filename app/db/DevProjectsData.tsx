@@ -56,6 +56,22 @@ export type Tool = {
     },
     {
         id: "3",
+        title:"Subscription Tracker API",
+        src: "/dev_images/subtracker.png",
+        summary: "バックエンドのみ",
+        tools: [
+            {name: "Node JS"},
+            {name: "Express"},
+            {name: "Javascript"},
+            {name: "Mongo DB"},
+        ],
+        link1: "https://github.com/nmarie3/backend-api",
+        link2: "",
+        status:"作成中",
+        type: "練習",
+    },
+    {
+        id: "4",
         title:"Pui Pui Sekai ECサイト",
         src: "/dev_images/pui-pui-sekai.png",
         summary: "",
@@ -71,7 +87,7 @@ export type Tool = {
         type: "練習",
     },
     {
-        id: "4",
+        id: "5",
         title:"Idol LP",
         src: "/dev_images/idol.png",
         summary: "",
@@ -85,7 +101,7 @@ export type Tool = {
         type: "練習",
     },
     {
-        id: "5",
+        id: "6",
         title:"Spud's Space Splash",
         src: "/dev_images/spud.png",
         summary: "Itch.io 20 Sec. Game Jam submission",
@@ -98,7 +114,7 @@ export type Tool = {
         type: "イベント",
     },
     {
-        id: "6",
+        id: "7",
         title:"Real Time Rocket Launcher Countdown",
         src: "/dev_images/rocket_countdown.png",
         summary: "",
@@ -113,7 +129,7 @@ export type Tool = {
         type: "",
     },
     {
-        id: "7",
+        id: "8",
         title:"07th Expansion Landing Page",
         src: "/dev_images/07th.png",
         summary: "",
@@ -127,7 +143,7 @@ export type Tool = {
         type: "練習",
     },
         {
-        id: "8",
+        id: "9",
         title:"Black Thunder Landing Page",
         src: "/dev_images/blackThunder.png",
         summary: "",
@@ -141,7 +157,7 @@ export type Tool = {
         type: "練習",
     },
     {
-        id: "9",
+        id: "10",
         title:"Linebreak Checker",
         src: "/dev_images/linebreak_checker.png",
         summary: "",
@@ -156,7 +172,7 @@ export type Tool = {
         type: "仕事で利用",
     },
     {
-        id: "10",
+        id: "11",
         title:"Coming Soon",
         src: "/images/comingSoon.jpg",
         summary: "",
