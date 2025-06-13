@@ -22,7 +22,7 @@ export type Tool = {
         id: "1",
         title:"My Portfolio",
         src: "/dev_images/portfolio.png",
-        summary: "",
+        summary: "現在のポートフォリオ",
         tools: [
             {name: "NextJS"},
             {name: "Typescript"},
@@ -40,7 +40,7 @@ export type Tool = {
         id: "2",
         title:"Cafe LycoReco Menu",
         src: "/dev_images/cafelycoreco_menu.png",
-        summary: "",
+        summary: "アニメ『リコリコ』のファン向けのインタラクティブな企画。アニメに出てくるメニューを3Dの本みたいにパラパラめくれるよ。",
         tools: [
             {name: "Three.js"},
             {name: "React"},
@@ -58,7 +58,7 @@ export type Tool = {
         id: "3",
         title:"Subscription Tracker API",
         src: "/dev_images/subtracker.png",
-        summary: "バックエンドのみ",
+        summary: "ユーザーのサブスクを管理するAPI。CRUDアプリで、バックエンドだけ作ってる。バックエンドのみ",
         tools: [
             {name: "Node JS"},
             {name: "Express"},
@@ -74,7 +74,7 @@ export type Tool = {
         id: "4",
         title:"Pui Pui Sekai ECサイト",
         src: "/dev_images/pui-pui-sekai.png",
-        summary: "",
+        summary: "モルモット商品が買えるECサイト。フロントは完成してて、今は仮のショッピングAPIを使ってる。バックエンドはまだ作業中。",
         tools: [
             {name: "NextJS"},
             {name: "NuxtJS"},
@@ -90,7 +90,7 @@ export type Tool = {
         id: "5",
         title:"Idol LP",
         src: "/dev_images/idol.png",
-        summary: "",
+        summary: "アイドルグループの静的なランディングページ。メンバーのプロフィールはカスタマイズできて、編集も楽。",
         tools: [
             {name: "React"},
             {name: "Typescript"},
@@ -104,7 +104,7 @@ export type Tool = {
         id: "6",
         title:"Spud's Space Splash",
         src: "/dev_images/spud.png",
-        summary: "Itch.io 20 Sec. Game Jam submission",
+        summary: "Itch.ioの「20 Second Game Jam 2022」で作って公開したゲーム。チームで開発したプロジェクト。",
         tools: [
             {name: "Game Maker"},
         ],
@@ -117,7 +117,7 @@ export type Tool = {
         id: "7",
         title:"Real Time Rocket Launcher Countdown",
         src: "/dev_images/rocket_countdown.png",
-        summary: "",
+        summary: "ロケット発射APIからリアルタイムデータを取って、5つのロケットのカウントダウンをするウェブアプリ。一番近い発射のタイマーはページの上にあるやつ。UIは古いままで、今後もっとモダンなフレームワークで作り直す予定。",
         tools: [
             {name: "Javascript"}, 
             {name: "HTML"},
@@ -132,7 +132,7 @@ export type Tool = {
         id: "8",
         title:"07th Expansion Landing Page",
         src: "/dev_images/07th.png",
-        summary: "",
+        summary: "07th Expansionの公式サイトを練習で再現してみたもの。",
         tools: [
             {name: "React"},
             {name: "Typescript"},
@@ -146,7 +146,7 @@ export type Tool = {
         id: "9",
         title:"Black Thunder Landing Page",
         src: "/dev_images/blackThunder.png",
-        summary: "",
+        summary: "ブラックサンダーの公式サイトを練習で再現してみたもの。",
         tools: [
             {name: "React"},
             {name: "Typescript"},
@@ -160,7 +160,7 @@ export type Tool = {
         id: "10",
         title:"Linebreak Checker",
         src: "/dev_images/linebreak_checker.png",
-        summary: "",
+        summary: "ゲーム業界で働いてた時に作ったツール。翻訳者がどこで改行すればいいか分かるようにするためのもので、QAでテキストが切れるのを防ぐ目的だった。",
         tools: [
             {name: "Javascript"},
             {name: "HTML"},
@@ -175,7 +175,7 @@ export type Tool = {
         id: "11",
         title:"Coming Soon",
         src: "/images/comingSoon.jpg",
-        summary: "",
+        summary: "麻雀関係のアプリを開発中。",
         tools: [
             {name: "MySQL"},
             {name: "Docker"},

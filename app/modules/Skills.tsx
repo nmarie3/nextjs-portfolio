@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tilt_Warp} from 'next/font/google';
-import { FaGithub, FaGolang, FaNodeJs, FaReact } from 'react-icons/fa6'
+import { FaGithub, FaGolang, FaNode, FaReact } from 'react-icons/fa6'
 import {RiNextjsFill } from 'react-icons/ri'
 import { SiAdobeaftereffects, SiAdobepremierepro, SiAdobephotoshop, SiAdobexd, SiBlender, SiJavascript, SiTypescript, SiThreedotjs } from 'react-icons/si'
 import { BounceEffect } from '../components/BounceRevealEffect'
@@ -35,7 +35,7 @@ const Skills = () => {
 
                       <BounceEffect delay={0.9} stiffness={100} damping={10}><RiNextjsFill className="text-7xl lg:text-8xl text-zinc-700"/></BounceEffect>
                       
-                      <BounceEffect delay={1} stiffness={100} damping={10}><FaNodeJs  className="text-7xl lg:text-8xl  text-zinc-700"/></BounceEffect>
+                      <BounceEffect delay={1} stiffness={100} damping={10}><FaNode  className="text-7xl lg:text-8xl  text-zinc-700"/></BounceEffect>
 
                       <BounceEffect delay={1} stiffness={100} damping={10}><FaGolang className="text-7xl lg:text-8xl  text-zinc-700"/></BounceEffect>
 
