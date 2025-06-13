@@ -40,7 +40,7 @@ export type Tool = {
         id: "2",
         title:"Cafe LycoReco Menu",
         src: "/dev_images/cafelycoreco_menu.png",
-        summary: "アニメ『リコリコ』のファン向けのインタラクティブな企画。アニメに出てくるメニューを3Dの本みたいにパラパラめくれるよ。",
+        summary: "アニメ『リコリコ』のファン向けのインタラクティブなアプリ。アニメに出てくるメニューを3Dの本みたいにパラパラめくれる。",
         tools: [
             {name: "Three.js"},
             {name: "React"},
@@ -58,7 +58,7 @@ export type Tool = {
         id: "3",
         title:"Subscription Tracker API",
         src: "/dev_images/subtracker.png",
-        summary: "ユーザーのサブスクを管理するAPI。CRUDアプリで、バックエンドだけ作ってる。バックエンドのみ",
+        summary: "ユーザーのサブスクを管理するAPI。CRUDアプリで、バックエンドのみ",
         tools: [
             {name: "Node JS"},
             {name: "Express"},
@@ -104,7 +104,7 @@ export type Tool = {
         id: "6",
         title:"Spud's Space Splash",
         src: "/dev_images/spud.png",
-        summary: "Itch.ioの「20 Second Game Jam 2022」で作って公開したゲーム。チームで開発したプロジェクト。",
+        summary: "Itch.ioの「20 Second Game Jam 2022」で作って公開したゲーム。2人のチームで開発したプロジェクト。",
         tools: [
             {name: "Game Maker"},
         ],
@@ -117,7 +117,7 @@ export type Tool = {
         id: "7",
         title:"Real Time Rocket Launcher Countdown",
         src: "/dev_images/rocket_countdown.png",
-        summary: "ロケット発射APIからリアルタイムデータを取って、5つのロケットのカウントダウンをするウェブアプリ。一番近い発射のタイマーはページの上にあるやつ。UIは古いままで、今後もっとモダンなフレームワークで作り直す予定。",
+        summary: "ロケット発射APIからリアルタイムデータを取って、5つのロケットのカウントダウンをするウェブアプリ。一番近い発射のタイマーはページの上にあるもの。UIは古いままで、今後もっとモダンなフレームワークで作り直す予定。",
         tools: [
             {name: "Javascript"}, 
             {name: "HTML"},
@@ -160,7 +160,7 @@ export type Tool = {
         id: "10",
         title:"Linebreak Checker",
         src: "/dev_images/linebreak_checker.png",
-        summary: "ゲーム業界で働いてた時に作ったツール。翻訳者がどこで改行すればいいか分かるようにするためのもので、QAでテキストが切れるのを防ぐ目的だった。",
+        summary: "ゲーム業界で働いてた時に作ったツール。翻訳者がどこで改行すればいいか分かるようにするためのもので、QAでテキストのはみ出しを防ぐ目的だった。",
         tools: [
             {name: "Javascript"},
             {name: "HTML"},
