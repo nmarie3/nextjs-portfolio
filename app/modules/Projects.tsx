@@ -72,8 +72,52 @@ const Projects = () => {
 
     return (
       <section id="projects" className="overflow-hidden">
-<ScrollAnimate>
+      <ScrollAnimate>
+      {/* mobile and sm screens */}
+      <div className="block md:hidden pt-20 sm:pt-0">
             <div className="pt-5 text-center flex-col justify-center">
+            <h2 className={`${tiltwarp.className} mb-7 rainbow-text text-transparent animate-gradient text-4xl sm:text-5xl`}>
+                  Projects
+            </h2>
+
+            {/* render tabs */}
+            <div className={`${tiltwarp.className} flex flex-col gap-1 text-center text-white`}>
+                  {tabs.map((tab, index) => (
+                  <div key={index}>
+                  <div
+                        className={`w-full flex justify-center text-xl items-center pt-6 pb-6 cursor-pointer ${
+                        activeTab === index
+                        ? "rainbow-text text-transparent animate-gradient"
+                        : "bg-gradient-to-b from-gray-800 to-zinc-950 hover:bg-gradient-to-b from-gray-300 to-zinc-950"
+                        }`}
+                        onClick={() => handleTabClick(index)}
+                  >
+                        {tab.title}
+                  </div>
+
+                  {/*render tab contents*/}
+                  {activeTab === index && (
+                        <div className="bg-zinc-950 pt-5 pb-10">
+                        {index === 0 && <DevList devProjects={devProjects} />}
+                        {index === 1 && <TranslationList translationProjects={translationProjects} />}
+                        {index === 2 && <CreativeList creativeProjects={creativeProjects} />}
+                        </div>
+                  )}
+                  </div>
+                  ))}
+            </div>
+            </div>
+      </div>
+
+
+
+
+
+
+      {/*md and lg screens*/}
+      <div className="hidden md:block">
+
+      <div className="pt-5 text-center flex-col justify-center">
             <h2 className={`${tiltwarp.className} mb-7 rainbow-text text-transparent animate-gradient text-4xl sm:text-5xl`}>Projects</h2>  
             {/* render tabs */}
             <div className={`${tiltwarp.className} flex flex-row gap-1 text-center text-white`}>
@@ -94,6 +138,8 @@ const Projects = () => {
                   {activeTab === 2 && <CreativeList creativeProjects={creativeProjects} />}
             </div>          
       </div>
+      </div>
+
 </ScrollAnimate>
       </section>
  )

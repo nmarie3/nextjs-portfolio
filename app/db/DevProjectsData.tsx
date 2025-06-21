@@ -40,7 +40,7 @@ export type Tool = {
         id: "2",
         title:"Cafe LycoReco Menu",
         src: "/dev_images/cafelycoreco_menu.png",
-        summary: "アニメ『リコリコ』のファン向けのインタラクティブなアプリ。アニメに出てくるメニューを3Dの本みたいにパラパラめくれる。",
+        summary: "アニメ『リコリコ』のファン向けのインタラクティブなアプリ。アニメに出てくる初期メニューを3Dの本みたいにパラパラめくれる。",
         tools: [
             {name: "Three.js"},
             {name: "React"},

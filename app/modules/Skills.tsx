@@ -59,7 +59,7 @@ const Skills = () => {
                     <BounceEffect delay={0.7} stiffness={100} damping={10}><SiBlender className="text-7xl lg:text-8xl text-zinc-700"/></BounceEffect>
 
                     <BounceEffect delay={0.7} stiffness={100} damping={10}>
-                      <div className="h-20 w-20 lg:h-30 lg:w-30">
+                      <div className="h-19 w-19 lg:h-25 lg:w-25">
                       <Image
                         src="images/aegisub.svg"
                         alt="aegisub"

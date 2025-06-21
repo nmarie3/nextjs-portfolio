@@ -64,7 +64,7 @@ export const translationProjectsData: ProjectCard[] = [
     },
     {
         id: "5",
-        title:"Live Action Mahou Sensei Negima!",
+        title:"2007 Live Action Mahou Sensei Negima!",
         src: "/translation_images/negima.png",
         summary: "実写化ドラマ 魔法先生ネギま！",
         tools: [
